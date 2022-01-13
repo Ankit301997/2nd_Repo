@@ -1,0 +1,54 @@
+package controlflow;
+import java.util.Scanner;
+public class FactorialNumber {
+	public static void main(String[] args) {
+		System.out.println("Enter a number");
+		Scanner sc= new Scanner(System.in);
+		int n=sc.nextInt();
+		int fact=1;
+		for(int i=1;i<=n;i++) {
+			fact=fact*i;
+		}
+		
+		System.out.println("The factorial is "+fact);
+		if(fact>99999 && fact<=999999){     
+            System.out.print("NUMBER AFTER CONVERSION:\t");
+            numberToWord(((fact / 100000) % 10), " MILLION");
+            numberToWord((fact % 100000), " ");
+    }
+		
+		if(fact>999 && fact<=99999){     
+                System.out.print("NUMBER AFTER CONVERSION:\t");
+                numberToWord(((fact / 1000) % 10), " THOUSAND");
+                numberToWord((fact % 1000), " ");
+        } 	
+		
+		if(fact>=0 && fact<=999){
+            if(fact==0){
+                System.out.print("NUMBER AFTER CONVERSION:\tZERO");
+            } else {
+                System.out.print("NUMBER AFTER CONVERSION:\t");
+                numberToWord(((fact / 100) % 10), " HUNDRED");
+                numberToWord((fact % 100), " ");
+            }
+
+        } else{
+            System.out.print("NUMBER OUT OF RANGE");
+        }
+	}
+		public static void numberToWord(int num, String val) {
+	        String ones[] = {" ", " ONE", " TWO", " THREE", " FOUR", " FIVE", " SIX", " SEVEN", " EIGHT", " NINE", " TEN", " ELEVEN", " TWELVE", " THIRTEEN", " FOURTEEN", " FIFTEEN", " SIXTEEN", " SEVENTEEN", " EIGHTEEN", " NINETEEN"
+	        };
+	        String tens[] = {" ", " ", " TWENTY", " THIRTY", " FOURTY", " FIFTY", " SIXTY", " SEVENTY", " EIGHTY", " NINETY"};
+	        if (num > 19) {
+	            System.out.print(tens[num / 10] + " " + ones[num % 10]);
+	        } else {
+	            System.out.print(ones[num]);
+	        }
+	        if (num > 0) {
+	            System.out.print(val);
+	        }
+
+		}
+}
+

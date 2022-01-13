@@ -1,0 +1,16 @@
+package controlflow;
+import java.util.Scanner;
+public class CaseChanger {
+
+	public static void main(String[] args) {
+		String Str;
+		Scanner sc= new Scanner(System.in);
+		System.out.println("Enter the string");
+		Str=sc.nextLine();
+		String Str2= Str.toUpperCase();
+		System.out.println("To upper case \n"+Str2);
+        String Str3= Str.toLowerCase();
+        System.out.println("To lower Case \n"+Str3);
+	}
+
+}

@@ -1,0 +1,24 @@
+package controlflow;
+import java.util.Scanner;
+public class Sudoko {
+      
+	public static void main(String[] args){
+		
+			for (int i = 0; i <9; i++)
+			{
+			for (int x = 0; x < 9; x++)
+			{
+			if ((x + 1 + i) > 9)
+			{
+			System.out.print(" "+ (x + i + 1) % 9);
+			}
+			else
+			{
+			System.out.print(" "+ (x + 1 + i));
+			}
+			}
+			System.out.print("\n");
+			}
+			System.out.print("");
+			}
+			}

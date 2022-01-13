@@ -1,0 +1,14 @@
+package controlflow;
+import java.util.Scanner;
+public class MoneyManagement {
+
+	public static void main(String[] args) {
+		int n=0;
+		Scanner sc= new Scanner(System.in);
+		n=sc.nextInt();
+		System.out.println("Enter Your Salary Details");
+        int NEC=n- ((55*n)/100);
+        System.out.println("The sum in account 1 NEC is"+NEC);
+	}
+
+}

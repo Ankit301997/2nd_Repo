@@ -1,0 +1,26 @@
+package controlflow;
+import java.util.Scanner;
+public class FactorialNumber {
+	public static void main(String[] args) {
+		System.out.println("Enter a number");
+		Scanner sc= new Scanner(System.in);
+		int n=sc.nextInt();
+		int fact=1;
+		for(int i=1;i<=n;i++) {
+			fact=fact*i;
+                if(fact==0){
+                    System.out.print("NUMBER AFTER CONVERSION:\tZERO");
+                } else {
+                    System.out.print("NUMBER AFTER CONVERSION:\t");
+                    numberToWord((fact / 100) % 10), " HUNDRED");
+                    numberToWord((fact % 100), " ");
+                }
+
+            } else{
+                System.out.print("NUMBER OUT OF RANGE");
+            }
+		}
+		
+		System.out.println("The factorial is "+fact);
+}
+}

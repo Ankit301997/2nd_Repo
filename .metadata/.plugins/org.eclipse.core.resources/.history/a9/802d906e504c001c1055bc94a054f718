@@ -1,0 +1,52 @@
+package controlflow;
+import java.util.*;
+public class UserInput {
+
+	public static void main(String[] args) {
+		
+		String choice = "";
+		double sum = 0.0;
+		double sub = 0.0;
+		double product=1.0;
+		double div=1.0;
+		int c=0;
+		
+		Scanner sc = new Scanner(System.in);
+		
+		while(!choice.equals("q")) {
+			System.out.println("Enter the numbers you want to for calculation or enter q to exit");
+			choice = sc.next();
+			
+			if(!choice.equals("q")) {
+				double num= Double.parseDouble(choice);
+				System.out.println("Enter 1 for add, 2 for sub, 3 for product and 4 for division")
+				c=sc.nextInt();
+				if(c==1) {
+				sum = sum + num;
+				System.out.println("the sum is "+sum);
+				}
+				else if(c==2) {
+				sub= sub - num;
+				System.out.println("the sub is "+sub);
+				}
+				else if(c==3) {
+				product= product*num;
+				System.out.println("the product is "+product);
+				}
+				else if(c==4) {
+				div = div/num;	
+				System.out.println("the division is"+div);
+				}
+				
+			}
+		}
+		
+		
+		
+		
+			}
+		
+
+	}
+
+

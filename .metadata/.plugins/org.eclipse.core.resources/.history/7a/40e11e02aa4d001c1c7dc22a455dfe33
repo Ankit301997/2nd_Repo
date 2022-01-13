@@ -1,0 +1,10 @@
+package controlflow;
+
+public class Permutation_2_Q10 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

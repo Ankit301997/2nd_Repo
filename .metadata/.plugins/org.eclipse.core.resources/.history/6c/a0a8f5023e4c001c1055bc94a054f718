@@ -1,0 +1,25 @@
+
+package controlflow;
+import java.util.Scanner;
+public class DoubleAverage {
+
+	public static void main(String[] args) {
+		Scanner sc= new Scanner(System.in);
+        double a,b;
+        if(sc.hasNextDouble()){  
+            System.out.println("Found Double Value: ");  
+        }  
+        else{  
+            System.out.println("Not Found Double Value: ");  
+        }
+        System.out.println("Enter the value of a:");
+          
+        a=sc.nextDouble();
+        System.out.println("Enter the value of b:");
+        b=sc.nextDouble();
+        
+        double c= (a+b)/2.0;
+        System.out.println("The average is "+c);
+	}
+
+}

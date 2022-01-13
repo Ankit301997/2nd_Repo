@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;controlflow.Permutation&apos; to &apos;Sudoko&apos;&#x0D;&#x0A;- Original project: &apos;Circle&apos;&#x0D;&#x0A;- Original element: &apos;controlflow.Permutation&apos;&#x0D;&#x0A;- Renamed element: &apos;controlflow.Sudoko&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;Permutation&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;controlflow{Permutation.java[Permutation" matchStrategy="1" name="Sudoko" qualified="false" references="true" similarDeclarations="false" stamp="1637778708285" textual="false" version="1.0"/>
+</session>

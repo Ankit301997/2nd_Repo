@@ -1,0 +1,19 @@
+package controlflow;
+import java.util.Scanner;
+public class FoodMenu {
+	public double subTotal;
+    public static double runningTotal;
+    private static double itemPrice;
+    static boolean ordering = true;
+    static Scanner input = new Scanner(System.in);
+
+    public static void menu() {
+        System.out.println("Welcome \n1. Burger (Rs 100) \n2. Fries (Rs 150)\n3. Soda (Rs 30) \n4. Chips (Rs 10) \n5. Samosa (Rs 15) \n6. Kachori (Rs 20) \n7. Biriyani (Rs 180) \n8. Fried Rice (Rs 120) \n9. Fruit Salad (Rs 50) \10. Bill/Done");
+    }
+	public static void main(String[] args) {
+		
+		
+		
+		
+ }
+}
